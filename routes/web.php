@@ -18,7 +18,8 @@ use App\Http\Controllers\TaskController;
 Route::get('/', [TaskController::class, 'index']);
 
 Route::resource('tasks', TaskController::class)
-    ->only(['store', 'update', 'destroy']);
+    ->only(['store', 'update', 'destroy'])
+    ->middleware('xssSanitizer');
 
 Route::fallback(function () {
     return redirect('/');
