@@ -2,6 +2,8 @@
 
 <x-layout.navbar />
 
-{{ $slot }}
+<div class="page-content">
+    {{ $slot }}
+</div>
 
 <x-layout.footer />

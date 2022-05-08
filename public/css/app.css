@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-weight: 300;
 }
 
 body {
@@ -34,6 +35,66 @@ button {
 }
 
 footer p {
-  font-size: 18px;
   text-align: center;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.page-content {
+  margin: 150px 0 200px;
+}
+
+@media (max-width: 992px) {
+  .col-md-8 {
+    margin-top: 35px;
+  }
+}
+
+.tasks {
+  padding: 20px 10px;
+  background: #fff;
+  border: 1px solid #d8d8d8;
+  border-radius: 4px;
+}
+.tasks table {
+  margin-bottom: 0;
+}
+.tasks table th {
+  font-weight: 500;
+}
+.tasks table td {
+  vertical-align: middle !important;
+}
+.tasks table td:first-of-type {
+  font-weight: 500;
+}
+.tasks table td.completed {
+  text-decoration: line-through;
+}
+.tasks table td form {
+  display: inline-block;
+}
+.tasks table td form .form-group {
+  margin: 0;
+}
+@media (max-width: 768px) {
+  .tasks table {
+    display: block;
+    width: 100%;
+    overflow-x: scroll;
+  }
+  .tasks table button:first-of-type {
+    margin-bottom: 5px;
+  }
+}
+@media (min-width: 768px) {
+  .tasks table td:last-of-type {
+    min-width: 100px;
+  }
 }

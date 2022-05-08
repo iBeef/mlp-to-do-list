@@ -1,0 +1,56 @@
+.col-md-8 {
+  @media (max-width: $desktop) {
+    margin-top: 35px;
+  }
+}
+
+.tasks {
+  padding: 20px 10px;
+  background: $white;
+  border: 1px solid #d8d8d8;
+  border-radius: 4px;
+
+  table {
+    margin-bottom: 0;
+
+    th {
+      font-weight: 500;
+    }
+
+    td {
+      vertical-align: middle !important;
+
+      &:first-of-type {
+        font-weight: 500;
+      }
+
+      &.completed {
+        text-decoration: line-through;
+      }
+
+      form {
+        display: inline-block;
+
+        .form-group {
+          margin: 0;
+        }
+      }
+    }
+
+    @media (max-width: $tablet) {
+      display: block;
+      width: 100%;
+      overflow-x: scroll;
+
+      button:first-of-type {
+        margin-bottom: 5px;
+      }
+    }
+
+    @media (min-width: $tablet) {
+      td:last-of-type {
+        min-width: 100px;
+      }
+    }
+  }
+}
