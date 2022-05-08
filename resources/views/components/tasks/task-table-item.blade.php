@@ -11,6 +11,7 @@
                     @method('PUT')
                     <button
                         class="btn btn-success"
+                        aria-label="Mark as complete button"
                     >
                         <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
                     </input>
@@ -22,6 +23,7 @@
                     @method('DELETE')
                     <button
                         class="btn btn-danger"
+                        aria-label="Delete task button"
                     >
                         <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
                     </input>
