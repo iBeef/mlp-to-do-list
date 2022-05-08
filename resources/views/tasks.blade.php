@@ -28,8 +28,8 @@
             </div>
             <div class="col-md-8">
                 <div class="tasks">
-                    @if(empty($tasks))
-                        <p>There are currently no tasks to display.</p>
+                    @if(count($tasks) < 1)
+                        <p class="no-tasks">There are currently no tasks to display.</p>
                     @else
                         <table class="table">
                             <thead>

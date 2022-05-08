@@ -15,6 +15,10 @@
 
     th {
       font-weight: 500;
+
+      &:nth-of-type(2) {
+        width: 100%;
+      }
     }
 
     td {
@@ -52,5 +56,10 @@
         min-width: 100px;
       }
     }
+  }
+
+  .no-tasks {
+    margin: 0;
+    font-weight: 500;
   }
 }
