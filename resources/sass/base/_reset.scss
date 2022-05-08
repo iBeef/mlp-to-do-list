@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+  // margin: 0;
+  // padding: 0;
+}
+
+body {
+  background: $bgColour;
+}
+
+a,
+p,
+ol,
+ul,
+h1,
+h4,
+h6,
+td {
+  text-decoration: none;
+  color: #333;
+}
+
+input {
+  border-style: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  font-size: inherit;
+  cursor: pointer;
+}

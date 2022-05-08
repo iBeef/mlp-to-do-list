@@ -9,7 +9,7 @@ class Footer extends Component
     /**
      * The current year
      * 
-     * @param string 
+     * @var string 
      */
     public $year;
 

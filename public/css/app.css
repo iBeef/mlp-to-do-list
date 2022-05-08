@@ -1,3 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #efefef;
+}
+
+a,
+p,
+ol,
+ul,
+h1,
+h4,
+h6,
+td {
+  text-decoration: none;
+  color: #333;
+}
+
+input {
+  border-style: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+* {
+  font-family: "Lato", sans-serif;
+}
+
 footer p {
+  font-size: 18px;
   text-align: center;
 }
