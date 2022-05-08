@@ -7,13 +7,20 @@ use Illuminate\View\Component;
 class Footer extends Component
 {
     /**
+     * The current year
+     * 
+     * @param string 
+     */
+    public $year;
+
+    /**
      * Create a new component instance.
      *
      * @return void
      */
     public function __construct()
     {
-        //
+        
     }
 
     /**
