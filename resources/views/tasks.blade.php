@@ -4,7 +4,7 @@
             <div class="col-md-4">
                 <form action="{{ url('/tasks') }}" method="POST">
                     @csrf
-                    <div class="form-group">
+                    <div class="form-group @error('description') has-error @enderror">
                         <label class="hidden" for="description">Task Description</label>
                         <input
                             name="description"
@@ -13,6 +13,9 @@
                             class="form-control"
                             placeholder="Insert task name"
                         >
+                        @error('description')
+                            <span class="text-danger">{{ $message }}</span>
+                        @enderror
                     </div>
                     <div class="form-group">
                         <input

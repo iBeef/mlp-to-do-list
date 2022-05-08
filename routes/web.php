@@ -16,3 +16,10 @@ use App\Http\Controllers\TaskController;
 */
 
 Route::get('/', [TaskController::class, 'index']);
+
+Route::resource('tasks', TaskController::class)
+    ->only(['store', 'update', 'destroy']);
+
+Route::fallback(function () {
+    return redirect('/');
+});
